@@ -94,6 +94,7 @@ Nlvi.utils = {
 
     $search.click(function () {
       $('.search').show();
+      $input.focus();
       if ($('.search-wrapper').hasClass('syuanpi')) {
         $('.search-wrapper').addClass('bloom');
       }
