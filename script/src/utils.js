@@ -95,7 +95,7 @@ Nlvi.utils = {
     $search.click(function () {
       $('.search').show();
       $input.focus();
-      alert("clicked");
+      alert("search.click");
       if ($('.search-wrapper').hasClass('syuanpi')) {
         $('.search-wrapper').addClass('bloom');
       }
@@ -109,6 +109,7 @@ Nlvi.utils = {
       } else $('.search').hide();
     });
     $header.click(function () {
+      alert("header.click");
       if ($('.search-wrapper').hasClass('syuanpi')) {
         $('.search-wrapper').removeClass('bloom').addClass('dead').one('webkitAnimationEnd AnimationEnd', function() {
           $(this).removeClass('dead');
